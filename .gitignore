@@ -1,0 +1,9 @@
+
+*.class
+*.MF
+target/classes/META-INF/maven/com.gk/RabbitMQDemo/pom.properties
+target/classes/META-INF/maven/com.gk/RabbitMQDemo/pom.xml
+.settings/org.eclipse.m2e.core.prefs
+.settings/org.eclipse.jdt.core.prefs
+.project
+.classpath
