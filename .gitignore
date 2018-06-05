@@ -7,3 +7,5 @@ target/classes/META-INF/maven/com.gk/RabbitMQDemo/pom.xml
 .settings/org.eclipse.jdt.core.prefs
 .project
 .classpath
+/target/
+/.settings/
