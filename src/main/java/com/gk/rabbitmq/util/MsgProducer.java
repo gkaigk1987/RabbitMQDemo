@@ -15,10 +15,8 @@ public class MsgProducer {
 		Channel channel = connection.createChannel();
 		//声明交换机
 		channel.exchangeDeclare(exchange, exchangeType, true, false, null);
-		
 		//发布消息
 		channel.basicPublish(exchange, routingKey, null, message.getBytes());
-		
 		System.out.println("[Exchange="+exchange+",ExchangeType="+exchangeType.getType()+",RoutingKey="+routingKey+"发送消息：]" + message);
 		channel.close();
 		connection.close();

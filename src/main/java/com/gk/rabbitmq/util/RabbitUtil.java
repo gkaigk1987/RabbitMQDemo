@@ -12,9 +12,12 @@ public class RabbitUtil {
 		ConnectionFactory factory = new ConnectionFactory();
 		factory.setHost("localhost");
 		factory.setPort(5672);
-		factory.setVirtualHost("/virtual_gktest");
-		factory.setUsername("gaokai");
-		factory.setPassword("123456");
+//		factory.setVirtualHost("/virtual_gktest");
+//		factory.setUsername("gaokai");
+//		factory.setPassword("123456");
+		factory.setVirtualHost("/");
+		factory.setUsername("guest");
+		factory.setPassword("guest");
 		Connection connection = factory.newConnection();
 		return connection;
 	}
